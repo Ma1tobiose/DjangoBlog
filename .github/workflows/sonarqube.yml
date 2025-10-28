@@ -38,9 +38,7 @@ permissions:
 
 jobs:
   Analysis:
-    runs-on: ubuntu-latest
-    environment: prod
-
+    runs-on: self-hosted
     steps:
       - name: Analyze with SonarQube
 
