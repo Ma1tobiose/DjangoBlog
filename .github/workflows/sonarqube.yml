@@ -39,6 +39,7 @@ permissions:
 jobs:
   Analysis:
     runs-on: self-hosted
+    environment: prod
 
     steps:
       - name: Analyze with SonarQube
