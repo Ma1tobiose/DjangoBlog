@@ -41,7 +41,7 @@ jobs:
     runs-on: self-hosted
     steps:
       - name: Analyze with SonarQube
-        uses: SonarSource/sonarqube-scan-action@v5.3.2
+        uses: sonarsource/sonarqube-scan-action@v6
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}   # Generate a token on SonarQube, add it to the secrets of this repo with the name SONAR_TOKEN (Settings > Secrets > Actions > add new repository secret)
